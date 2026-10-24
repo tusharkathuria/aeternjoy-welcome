@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AeternJoy</title>
+    <meta name="description" content="Welcome to AeternJoy." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button
+      type="button"
+      class="nav-toggle"
+      id="nav-toggle"
+      aria-expanded="false"
+      aria-controls="sidebar"
+      aria-label="Open projects"
+    >
+      <span class="nav-toggle-bars" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    <div class="backdrop" id="backdrop"></div>
+
+    <nav class="sidebar" id="sidebar" aria-label="Projects">
+      <div class="sidebar-inner">
+        <h2>Projects</h2>
+        <div id="project-list"></div>
+      </div>
+    </nav>
+
+    <main class="page">
+      <section class="hero">
+        <h1 class="welcome">Welcome to AeternJoy</h1>
+        <p class="quote-label">Today’s quote</p>
+        <blockquote>
+          <p id="quote-text"></p>
+          <cite id="quote-author"></cite>
+        </blockquote>
+      </section>
+    </main>
+
+    <script src="quotes.js"></script>
+    <script src="projects.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
